@@ -1,0 +1,11 @@
+This is a template for making programs using the ASCII character set. 
+You'll need SDL, as characters are blitted from a spritesheet as opposed 
+to setting up a console. 
+
+Three functions are included for printing individual characters, strings,
+ and integers.
+
+A few basic colors are defined as examples. At the moment, there is no 
+support for background color. If you want to add background colors, 
+just make alternate versions of the bitmap with different background 
+colors and blit from those instead.
