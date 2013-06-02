@@ -1,4 +1,4 @@
-#include "SDL.h"        //Include SDL functions and datatypes
+#include <SDL/SDL.h>        //Include SDL functions and datatypes
 #include "def.h"        //Colors
 #include "ASCII_Lib.h"  //Drawing functions
 
