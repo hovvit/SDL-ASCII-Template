@@ -6,8 +6,7 @@
 // SDL ASCII Template v101125
 // Evan Eshelman - ejeshelman@gmail.com
 // github.com/hovvit
-// Use for anything, but please
-// keep this comment.
+// Use for anything!
 //***************************************
 
 SDL_Event event;
