@@ -1,7 +1,4 @@
-#include "SDL.h"
-#include "def.h"
-#include <math.h>
-
+#include "ASCII_Lib.h"
 void drawChr(int x, int y, int smiley, SDL_Surface* source, SDL_Surface* destination, Uint32 color)
 {
     //Holds offsets
@@ -40,7 +37,7 @@ void drawStr(int x, int y, char stringy[], SDL_Surface* source, SDL_Surface* des
     }
 }
 
-void drawInt(int x, int y, int number, SDL_Surface* source, SDL_Surface* destination, Uint32 color, int size = 0)
+void drawInt(int x, int y, int number, SDL_Surface* source, SDL_Surface* destination, Uint32 color, int size)
 {
     // Note that numbers do not erase before redrawing and are left-justified
     // For example, if you print '17', then in the same location print '5',
@@ -54,7 +51,7 @@ void drawInt(int x, int y, int number, SDL_Surface* source, SDL_Surface* destina
         for ( int i = 0; i < (size-1); i++ ) { exp = exp*10; }
         number = number + exp;
     }
-    itoa(number, buf, 10);
+    //itoa(number, buf, 10);
     if ( size > 1 )
     {
         buf[0] = 48;

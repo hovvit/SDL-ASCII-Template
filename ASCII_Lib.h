@@ -1,5 +1,9 @@
 #ifndef ASCII_LIB_H
 #define ASCII_LIB_H
+#include <SDL/SDL.h>
+#include <math.h>
+#include "def.h"
+
 
 // Print an ASCII character
 void drawChr(int x, int y, int smiley, SDL_Surface* source, SDL_Surface* destination, Uint32 color);
